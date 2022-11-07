@@ -25,9 +25,9 @@ st.set_page_config(**Navigation)
 
 
 def load_model():
-  with open("birectionalISTM_model.pkl", "rb") as file:
-    data = pickle.load(file)
-  return data
+    with open("birectionalISTM_model.pkl", "rb") as file:
+        data = pickle.load(file)    
+    return data
 
 
 def load_tokenizer():
@@ -47,12 +47,8 @@ def main():
 
     st.write("""### Please enter your text:""")
 
-
     # construct text box
     text = [st.text_input('')]
-
-
-
 
     result = st.button('Classify')
     if result:
