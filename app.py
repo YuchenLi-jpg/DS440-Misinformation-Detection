@@ -1,3 +1,10 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("tensorflow")
 import tensorflow
 from tensorflow.keras import layers
 from tensorflow import keras
