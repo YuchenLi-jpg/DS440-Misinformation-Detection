@@ -1,3 +1,6 @@
+import tensorflow
+from tensorflow.keras import layers
+from tensorflow import keras
 from keras.preprocessing.text import Tokenizer
 import tensorflow.keras
 from tensorflow.keras.preprocessing.sequence import pad_sequences
